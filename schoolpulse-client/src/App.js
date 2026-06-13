@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import Dashboard from './pages/Dashboard';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div style={styles.layout}>
+        <Sidebar />
+        <main style={styles.main}>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const styles = {
+  layout: {
+    display: 'flex',
+    minHeight: '100vh',
+    background: '#F9FAFB',
+  },
+  main: {
+    marginLeft: 240,
+    flex: 1,
+    minHeight: '100vh',
+  },
+};
