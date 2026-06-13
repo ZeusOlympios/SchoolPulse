@@ -1,0 +1,6 @@
+@SchoolPulse.API_HostAddress = http://localhost:5170
+
+GET {{SchoolPulse.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
