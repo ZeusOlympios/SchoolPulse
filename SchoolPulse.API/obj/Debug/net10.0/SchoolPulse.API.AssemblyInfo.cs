@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SchoolPulse.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3abe12ceb4da69e6982905a1a0f80a92febaceb7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddb8fd6d63cdab180d20fba6336d116ac50fcf2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SchoolPulse.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SchoolPulse.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
